@@ -1,0 +1,5 @@
+-- Write your query below
+select user_id, Max(time_stamp) as last_stamp 
+from logins 
+where time_stamp >= '2020-01-01' AND time_stamp < '2021-01-01'
+Group by user_id;
